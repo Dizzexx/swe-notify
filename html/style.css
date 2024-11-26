@@ -1,0 +1,91 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background: transparent;
+    overflow: hidden;
+}
+
+#notifications {
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+/* Grundläggande stil för notifikationer */
+.notification {
+    padding: 15px 20px;
+    font-size: 16px;
+    width: 350px; /* Fast bredd */
+    animation: slide-in 0.5s ease-out, fade-out 0.5s ease-in 4.5s forwards;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
+    word-wrap: break-word; /* Hanterar långa texter snyggt */
+    border: 2px solid #3b3b3b; /* Ljusgrå outline */
+    display: flex;
+    align-items: center; /* Gör så att text och ikon alignas horisontellt */
+    background-color: #fff; /* Standard bakgrund för notifikationer */
+}
+
+/* Specifika bakgrundsfärger för varje typ av notifikation */
+.notification.success {
+    background-color: #34c23975; /* Grön för framgång */
+    color: white;
+}
+
+.notification.error {
+    background-color: #f4433683; /* Röd för fel */
+    color: white;
+}
+
+.notification.info {
+    background-color: #30303083; /* Blå för information */
+    color: white;
+}
+
+.notification.warning {
+    background-color: #ff990085; /* Orange för varning */
+    color: white;
+}
+
+/* Ikoner */
+.notification .icon {
+    margin-right: 10px; /* Avstånd mellan ikon och text */
+    font-size: 25px; /* Gör ikonen lagom stor */
+}
+
+/* Specifika ikoner för varje typ */
+.notification.success .icon {
+    color: #131313ee; /* Grön för framgång */
+}
+
+.notification.error .icon {
+    color: #0a0a0ae0; /* Röd för fel */
+}
+
+.notification.info .icon {
+    color: #111111ee; /* Blå för information */
+}
+
+.notification.warning .icon {
+    color: #030303d8; /* Orange för varning */
+}
+
+/* Animationer */
+@keyframes slide-in {
+    from {
+        transform: translateX(100%);
+    }
+    to {
+        transform: translateX(0);
+    }
+}
+
+@keyframes fade-out {
+    to {
+        opacity: 0;
+        transform: translateX(100%);
+    }
+}
