@@ -51,6 +51,8 @@ body {
 .notification .icon {
     margin-right: 10px;
     font-size: 25px;
+    border-right: 2px solid #3b3b3b;
+    padding-right: 10px;
 }
 
 .notification.success .icon {
