@@ -15,62 +15,58 @@ body {
     gap: 10px;
 }
 
-/* Grundläggande stil för notifikationer */
 .notification {
     padding: 15px 20px;
     font-size: 16px;
-    width: 350px; /* Fast bredd */
+    width: 350px;
     animation: slide-in 0.5s ease-out, fade-out 0.5s ease-in 4.5s forwards;
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
-    word-wrap: break-word; /* Hanterar långa texter snyggt */
-    border: 2px solid #3b3b3b; /* Ljusgrå outline */
+    word-wrap: break-word; 
+    border: 2px solid #3b3b3b;
     display: flex;
-    align-items: center; /* Gör så att text och ikon alignas horisontellt */
-    background-color: #fff; /* Standard bakgrund för notifikationer */
+    align-items: center; 
+    background-color: #fff;
 }
 
-/* Specifika bakgrundsfärger för varje typ av notifikation */
 .notification.success {
-    background-color: #34c23975; /* Grön för framgång */
+    background-color: #34c23975;
     color: white;
 }
 
 .notification.error {
-    background-color: #f4433683; /* Röd för fel */
+    background-color: #f4433683;
     color: white;
 }
 
 .notification.info {
-    background-color: #30303083; /* Blå för information */
+    background-color: #30303083;
     color: white;
 }
 
 .notification.warning {
-    background-color: #ff990085; /* Orange för varning */
+    background-color: #ff990085;
     color: white;
 }
 
-/* Ikoner */
 .notification .icon {
-    margin-right: 10px; /* Avstånd mellan ikon och text */
-    font-size: 25px; /* Gör ikonen lagom stor */
+    margin-right: 10px;
+    font-size: 25px;
 }
 
-/* Specifika ikoner för varje typ */
 .notification.success .icon {
-    color: #131313ee; /* Grön för framgång */
+    color: #131313ee;
 }
 
 .notification.error .icon {
-    color: #0a0a0ae0; /* Röd för fel */
+    color: #0a0a0ae0;
 }
 
 .notification.info .icon {
-    color: #111111ee; /* Blå för information */
+    color: #111111ee;
 }
 
 .notification.warning .icon {
-    color: #030303d8; /* Orange för varning */
+    color: #030303d8; 
 }
 
 /* Animationer */
