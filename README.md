@@ -1,4 +1,4 @@
-# Swe-Notify
+# ❗│Swe-Notify
 
 ## export to trigger notifications in other scripts:
 
