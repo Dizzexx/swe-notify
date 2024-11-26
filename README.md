@@ -2,14 +2,14 @@
 
 # export to trigger notifications in other scripts:
 
--- Success Message
+# Success Message
 exports['swe-notify']:SendNotification("Success!", 5000, "success")
 
--- Error Message
+# Error Message
 exports['swe-notify']:SendNotification("Error!", 5000, "error")
 
--- Info Message
+# Info Message
 exports['swe-notify']:SendNotification("This is a info message.", 5000, "info")
 
--- Warning Message
+# Warning Message
 exports['swe-notify']:SendNotification("WARNING WARNING!!", 5000, "warning")
