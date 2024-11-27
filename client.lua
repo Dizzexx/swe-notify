@@ -20,3 +20,5 @@ RegisterCommand('testnotify', function(_, args)
 end)
 
 exports('SendNotification', SendNotification)
+
+RegisterNetEvent('swe-notify:sendNotification', SendNotification)
